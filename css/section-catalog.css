@@ -1,0 +1,124 @@
+.catalog {
+    position: relative;
+    background: url('../img/bg-escalator.jpg') no-repeat center bottom / 100% auto;
+}
+
+.catalog-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.catalog-row .section-title {
+    flex: 0 0 25%;
+}
+
+.catalog__desc {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-accent);
+    padding: 2.2rem 3.6rem;
+    background: linear-gradient(-45deg, #f3eee2, #fbf9f5, #f3eee2);
+}
+
+.catalog__desc::after,
+.catalog__desc::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 5px;
+    background-color: var(--color-accent);
+}
+
+.catalog__desc::before {
+    right: 3.6rem;
+    top: 0;
+    max-width: 5.5rem;
+}
+
+.catalog__desc::after {
+    left: 3.6rem;
+    max-width: 13rem;
+    bottom: 0;
+}
+
+.catalog__slider {
+    margin: 0 -1.5rem;
+    margin-top: 6rem;
+}
+
+.slider-item__inner {
+    display: block;
+    border: 2px solid var(--color-accent);
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.catalog-slider__item {
+    margin: 0 1.5rem;
+    text-align: center;
+    height: 100%;
+}
+
+.slider-item__inner .thumb {
+    height: 0;
+    padding-top: 80%;
+    position: relative;
+}
+
+.slider-item__inner .thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider-item__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    min-height: 4.6rem;
+    margin-top: 0.5em;
+}
+
+.catalog-facts {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5rem;
+    padding-top: 5rem;
+}
+
+.catalog-facts__title {
+    position: relative;
+    font-size: 12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    mix-blend-mode: multiply;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.55;
+    border-radius: 2rem;
+    line-height: 1.2;
+    padding: 0 0.4ch;
+}
+
+.catalog-facts__title span {
+    position: relative;
+    z-index: 2;
+}
+
+.catalog-facts__header {
+    text-align: right;
+}
+
+.catalog-facts__subtitle {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+}

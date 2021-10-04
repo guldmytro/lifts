@@ -3,6 +3,7 @@
     top: -0.1px;
     color: var(--color-text-invert);
     background-color: var(--color-bg-header);
+    z-index: 10;
 }
 
 .header-row {

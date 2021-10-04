@@ -5,7 +5,7 @@
     --color-bg-pricelink: #3b3636;
     --color-accent: #c1ac6f;
     --color-text-langswitcher: #898989;
-    --transition: color 200ms, background 200ms ease;
+    --transition: color 100ms, background 100ms ease, opacity 100ms ease, border-color 100ms ease;
     --filter-invert: invert(1);
     --filter-accent: invert(74%) sepia(9%) saturate(1487%) hue-rotate(7deg) brightness(92%) contrast(93%);
 }
