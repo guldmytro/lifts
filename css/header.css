@@ -1,0 +1,130 @@
+.header {
+    position: sticky;
+    top: -0.1px;
+    color: var(--color-text-invert);
+    background-color: var(--color-bg-header);
+}
+
+.header-row {
+    display: flex;
+    padding: 1.8rem 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-menu-btn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.header-menu-btn span {
+    background-color: var(--color-text-invert);
+    height: 2px;
+    width: 100%;
+}
+
+.header-menu-btn span + span {
+    width: 70%;
+    margin-top: 0.8rem;
+}
+
+.header-homelink {
+    flex: 0 0 13%;
+}
+
+.header-homelink img {
+    width: 100%;
+    max-height: 4rem;
+    object-fit: contain;
+    object-position: left center;
+    filter: var(--filter-invert);
+}
+
+.header-link {
+    position: relative;
+    color: var(--color-accent);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.header-link .thumb {
+    padding: 0.6rem 1rem;
+    border-radius: 100px;
+}
+
+.header-link::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 75%;
+    border-radius: 100px;
+    background-color: var(--color-bg-pricelink);
+    z-index: -1;
+}
+
+.header-link .thumb img {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    filter: var(--filter-accent);
+}
+
+.header-link .thumb img[src*="phone"] {
+    margin: calc(1rem / 2);
+    margin-right: 0;
+    width: calc(3rem - 1rem);
+    height: calc(3rem - 1rem);
+}
+
+.header-consult {
+    position: relative;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-consult::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -999px;
+    left: 0;
+    right: 0;
+    bottom: -999px;
+    background-color: var(--color-accent);
+    z-index: -1;
+}
+
+.header-phonelink {
+    color: var(--color-text-invert);
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.header-langswitcher {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 1.2rem;
+    color: var(--color-text-langswitcher);
+}
+
+.header-langswitcher .current-menu-item {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+

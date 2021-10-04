@@ -1,0 +1,11 @@
+:root {
+    --color-bg-header: #1d1c2a;
+    --color-text-normal: #101010;
+    --color-text-invert: #fff;
+    --color-bg-pricelink: #3b3636;
+    --color-accent: #c1ac6f;
+    --color-text-langswitcher: #898989;
+    --transition: color 200ms, background 200ms ease;
+    --filter-invert: invert(1);
+    --filter-accent: invert(74%) sepia(9%) saturate(1487%) hue-rotate(7deg) brightness(92%) contrast(93%);
+}
