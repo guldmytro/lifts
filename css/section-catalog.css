@@ -89,11 +89,12 @@
 .catalog-facts {
     display: flex;
     flex-flow: row nowrap;
-    gap: 5rem;
-    padding-top: 5rem;
+    gap: 15rem;
+    padding-top: 11rem;
 }
 
 .catalog-facts__title {
+    flex-shrink: 0;
     position: relative;
     font-size: 12rem;
     font-weight: 800;
@@ -121,4 +122,63 @@
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 0.4em;
+}
+
+.catalog-facts__stats {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.stats-group__item {
+    position: relative;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    width: 11rem;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.catalog-facts__stats .counter {
+    font-size: 6.5rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    position: absolute;
+    top: -0.8ch;
+    right: -0.5ch;
+}
+
+.catalog-facts__stats .label {
+    margin-top: 2rem;
+    line-height: 1.1;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.stats-group__item::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+
+.stats-group__item::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 50%;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

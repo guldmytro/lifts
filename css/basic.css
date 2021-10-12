@@ -113,3 +113,7 @@ section {
 .slick-list {
     margin-bottom: calc(3.5rem + 5.5rem);
 }
+
+.section-header__screen-reader {
+    display: none;
+}
