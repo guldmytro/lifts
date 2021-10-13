@@ -1,0 +1,202 @@
+.portfolio {
+    padding-top: 6rem;
+}
+
+.portfolio {
+    padding-bottom: 18rem;
+}
+
+.portfolio .container {
+    position: relative;
+}
+
+.portfolio .container::before {
+    content: '';
+    display: block;
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+    width: 60%;
+    top: 15px;
+    bottom: -40px;
+    right: 15px;
+    background-image: linear-gradient(45deg, #1d1c2a, #c1ac6f, #1d1c2a);
+}
+
+.portfolio .container::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    bottom: -35px;
+    right: 20px;
+    background-color: #fff;
+    width: calc(60% - 10px);
+    z-index: -1;
+}
+
+.portfolio-slider {
+    float: left;
+    width: calc(50% - 1.5rem);
+}
+
+.portfolio-row {
+    position: relative;
+}
+
+.portfolio-row::before {
+    content: '';
+    position: absolute;
+    background-color: #252525;
+    width: 10rem;
+    display: block;
+    right: calc(60% + 15px);
+    bottom: -2rem;
+    top: -2rem;
+    transform: translateX(50%);
+}
+
+.portfolio-row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.portfolio .portfolio-form {
+    float: right;
+    width: calc(50% - 1.5rem);
+}
+
+.portfolio-slider__item {
+    position: relative;
+}
+
+.portfolio-slider .title {
+    position: absolute;
+    z-index: 999;
+    top: 3rem;
+    background-color: var(--color-bg-header);
+    color: var(--color-text-invert);
+    z-index: 2;
+    padding: 1rem 3rem;
+}
+
+.portfolio-slider .slick-list {
+    margin-bottom: 0;
+}
+
+.portfolio-slider .slider-progress {
+    padding: 1.5rem 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: var(--color-bg-header);
+    color: var(--color-text-invert);
+    font-size: 1.3rem;
+    min-width: 11rem;
+    text-align: center;
+    color: #888;
+}
+
+.portfolio-slider .slider-progress .current {
+    color: var(--color-accent);
+    font-size: 2.5rem;
+}
+
+.portfolio-form__title {
+    padding-left: 4rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.portfolio-form__subtitle {
+    padding-left: 4rem;
+    font-size: 1.6rem;
+    margin-top: 0.8em;
+}
+
+.portfolio-form__box {
+    padding: 2.5rem 4rem;
+    background-color: var(--color-bg-header);
+    color: var(--color-text-invert);
+}
+
+.portfolio-form__box h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.portfolio-form .fields {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+    height: 5rem;
+    border: 1px solid #aaaaac;
+    background-color: transparent;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-weight: 700;
+    color: var(--color-text-invert);
+    transition: border-color 200ms;
+}
+
+input[type='text']:focus,
+input[type='tel']:focus,
+input[type='email']:focus {
+    border-color: var(--color-text-invert);
+}
+
+.portfolio-form .portfolio-form__box {
+    margin-top: 4rem;
+    margin-right: -4rem;
+}
+
+[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+label {
+    color: #aaaaac;
+}
+
+.custom-checkbox {
+    position: relative;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #aaaaac;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+.custom-checkbox::before {
+    content: '';
+    position: absolute;
+    font-size: 1.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%) rotate(130deg);
+}
+
+input:checked + .custom-checkbox::before {
+    content: '¬';
+}
+
+label {
+    display: flex;
+}
+
+.portfolio-form__box {
+    background-image: radial-gradient(ellipse 15% 100% at 0% 100%, rgba(193, 172, 111, 0.5), transparent),
+    radial-gradient(ellipse 70% 150% at 100% 0%, rgba(193, 172, 111, 0.5), transparent);
+}

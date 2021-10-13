@@ -1,0 +1,79 @@
+.install {
+    background: url('../img/bg-install.jpg') no-repeat center / cover;
+    padding-bottom: 0;
+}
+
+.install .section-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.install .section-header__title {
+    max-width: 50rem;
+}
+
+.install-group {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    color: var(--color-text-invert);
+}
+
+.install-group__item .thumb {
+    height: 0;
+    padding-top: 140%;
+    position: relative;
+}
+
+.install-group__item .thumb img {
+    position: absolute;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.install-group__item {
+    position: relative;
+}
+
+.install-group__item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(193, 172, 111, 0.2) 0%, rgba(193, 172, 111, 0.95) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.install-group__item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.install-group__item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    border: 3px solid #fff;
+    opacity: 0.9;
+    z-index: 4;
+}
