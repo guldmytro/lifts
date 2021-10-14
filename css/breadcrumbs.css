@@ -1,0 +1,11 @@
+.breadcrumbs {
+    padding: 5rem 0 0;
+}
+
+.breadcrumbs a {
+    color: #9d9d9d;
+}
+
+.breadcrumbs-links > * + *::before {
+    content: ' - '
+}

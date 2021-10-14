@@ -1,0 +1,18 @@
+.documents {
+    padding-top: 0;
+    color: var(--color-text-invert);
+    background-color: var(--color-bg-header);
+    background-image: radial-gradient(ellipse 15% 80% at 0 100%,rgba(193,172,111,.5),transparent),
+                      radial-gradient(ellipse 100% 100% at 100% 30%,rgba(193,172,111,.5),transparent);
+}
+
+.documents > .container {
+    padding-top: 10rem;
+}
+
+.documents-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}

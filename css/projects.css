@@ -1,0 +1,154 @@
+.projects {
+    padding-top: 0;
+}
+
+.projects > .container {
+    padding-top: 10rem;
+}
+
+.projects-group {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+
+.projects-group .related-slider__item {
+    margin: 0;
+}
+
+.videos {
+    color: var(--color-text-invert);
+    background: url('../img/bg-videos.jpg') no-repeat center / cover;
+}
+
+.videos-group {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 3rem;
+    list-style: none;
+}
+
+.videos-group .thumb {
+    height: 0;
+    position: relative;
+    padding-top: 70%;
+}
+
+.videos-group .thumb video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects  .partners-slider .inner {
+    position: relative;
+}
+
+.videos  .partners-slider__item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #000;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.videos  .partners-slider__item .thumb {
+    z-index: 2;
+}
+
+.videos .slick-arrow:not(:hover) {
+    background-color: #474747;
+}
+
+.videos .slick-arrow::before {
+    filter: invert(1);
+}
+
+.videos-group + .section-header {
+    padding-top: 9rem;
+}
+
+.download {
+    color: var(--color-text-invert);
+    background: url('../img/bg-download.jpg') no-repeat center / cover;
+}
+
+.download-row {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.download-form {
+    width: 100%;
+    max-width: 43rem;
+    text-align: center;
+    background-color: var(--color-bg-header);
+    padding: 5.5rem 3.5rem;
+    outline: 1px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.download-form__subtitle {
+    margin: 0.8em 0 1.5em;
+}
+
+.download-form input:not([type='checkbox']) {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.download-form label {
+    margin-top: 1em;
+    text-align: left;
+}
+
+.download-form .btn_submit {
+    width: 100%;
+    margin-top: 1.2em;
+}
+
+.download-link-wrapper {
+    flex-shrink: 0;
+    padding: 6rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.download-link {
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    text-align: center;
+}
+
+.download-link img {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(1);
+    object-fit: contain;
+}
+
+.download-link span {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}

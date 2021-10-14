@@ -68,8 +68,8 @@
                         </h1>
                     </div>
                     <div class="service-group">
-                        <div class="col">
-                            <div class="service-group__item service-item">
+                        <div class="service-group__item service-item">
+                            <div class="inner">
                                 <div class="cnt">1</div>
                                 <h2 class="service-item__title">
                                     Техническое обслуживание без присутствия электромеханика на объекте:
@@ -80,48 +80,47 @@
                                     <li>Проведение технических работ согласно регламенту.</li>
                                 </ul>
                             </div>
-
-                            <div class="service-group__item service-item">
+                        </div>
+                        <div class="service-group__item service-item">
+                            <div class="inner">
                                 <div class="cnt">2</div>
                                 <h2 class="service-item__title">
                                     Техническое обслуживание с ежедневным присутствием электромеханика на объекте в дневное время:
                                 </h2>
                                 <ul class="service-item__list">
+                                    <li>Присутствие электромеханика на объекте ежедневно с 8.00 до 20.00;</li>
                                     <li>Аварийное обслуживание 24ч;</li>
                                     <li>Подготовка лифта к ежегодному техническому освидетельствованию;</li>
                                     <li>Проведение технических работ согласно регламенту.</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- /.col -->
-
-                        <div class="col">
-                            <div class="service-group__item service-item">
+                        <div class="service-group__item service-item">
+                            <div class="inner">
                                 <div class="cnt">3</div>
                                 <h2 class="service-item__title">
-                                    Техническое обслуживание без присутствия электромеханика на объекте:
+                                    Техническое обслуживание с присутствием электромеханика на объекте в дневное время по будням:
                                 </h2>
                                 <ul class="service-item__list">
+                                    <li>Присутствие электромеханика на объекте по будням с 9.00 до 18.00;</li>
                                     <li>Аварийное обслуживание 24ч;</li>
                                     <li>Подготовка лифта к ежегодному техническому освидетельствованию;</li>
-                                    <li>Проведение технических работ согласно регламенту.</li>
                                 </ul>
                             </div>
-
-                            <div class="service-group__item service-item">
+                        </div>
+                        <div class="service-group__item service-item">
+                            <div class="inner">
                                 <div class="cnt">4</div>
                                 <h2 class="service-item__title">
-                                    Техническое обслуживание с ежедневным присутствием электромеханика на объекте в дневное время:
+                                    Техническое обслуживание с круглосуточным присутствием электромеханика на объекте:
                                 </h2>
                                 <ul class="service-item__list">
-                                    <li>Аварийное обслуживание 24ч;</li>
+                                    <li>Присутствие электромеханика на объекте 24ч;</li>
                                     <li>Подготовка лифта к ежегодному техническому освидетельствованию;</li>
                                     <li>Проведение технических работ согласно регламенту.</li>
                                 </ul>
                             </div>
                         </div>
-                        <!-- /.col -->
-
                     </div>
                 </div>
             </section>
@@ -144,7 +143,7 @@
                         <div class="services-thumb">
                             <div class="inner">
                                 <div class="thumb">
-                                    <img src="./img/project.jpg" alt="проект">
+                                    <img src="./img/services.jpg" alt="проект">
                                 </div>
                             </div>
                         </div>
@@ -171,7 +170,7 @@
                             <h3 class="services-item__title">Диспетчеризация лифтового оборудования</h3>
                         </li>
                     </ul>
-                    <button type="button" class="btn">Заказать услугу</button>
+                    <button type="button" class="btn btn_darken">Заказать услугу</button>
                     <!-- /.services-group -->
                     <ul class="services-features">
                         <li class="services-features__item">
@@ -215,6 +214,36 @@
                 </div>
             </section>
             <!-- /.services -->
+
+            <section class="download">
+                <div class="container">
+                    <div class="download-row">
+                        <div class="download-link-wrapper">
+                            <a href="#" class="download-link">
+                                <span>Скачать прайс-лист</span>
+                                <img src="./img/icon-download.png" alt="скачать">
+                            </a>
+                        </div>
+                        <form class="download-form">
+                            <h2 class="download-form__title">
+                                Хотите узнать о наших услугах?
+                            </h2>
+                            <p class="download-form__subtitle">
+                                Заполните форму и мы перезвоним Вам в течении 15 минут!
+                            </p>
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                            <input type="tel" name="tel" placeholder="Ваш телефон" required>
+                            <label>
+                                <input type="checkbox" name="agree" checked required>
+                                <span class="custom-checkbox"></span>
+                                <span>Я согласен/а на обработку персональных данных</span>
+                            </label>
+                            <button type="submit" class="btn btn_submit">Записаться на консультацию</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- /.download -->
 
         </div>
         <!-- /.content -->
@@ -264,8 +293,8 @@
                 <a href="#" class="footer-tel">
                     <div class="thumb">
                         <img src="./img/icon-phone.png" alt="телефон">
-                        <span>+380 (50) 111-11-11</span>
                     </div>
+                    <span>+380 (50) 111-11-11</span>
                 </a>
             </div>
         </footer>
