@@ -71,3 +71,7 @@
 .map_single {
     height: 44rem;
 }
+
+.contacts-group .thumb {
+    flex-shrink: 0;
+}

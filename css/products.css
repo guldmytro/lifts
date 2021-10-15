@@ -1,7 +1,6 @@
 .products-filters {
     display: inline-flex;
-    padding: 5px;
-    border: 1px solid var(--color-accent);
+    flex-flow: row wrap;
     gap: 1rem;
 }
 
@@ -103,4 +102,9 @@
 
 .products-group__item:hover .inner {
     border-color: transparent;
+}
+
+.related-slider_secondary {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 }
