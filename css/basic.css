@@ -196,3 +196,58 @@ label:hover {
     width: 5.5rem;
     background-color: #1d1c2a;
 }
+
+.animate {
+    opacity: 0;
+    -webkit-transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.grow-up {
+    -webkit-transform: translateY(100px) scale(0.98);
+    -ms-transform: translateY(100px) scale(0.98);
+    transform: translateY(100px) scale(0.98);
+}
+.grow-left {
+    -webkit-transform: translateX(-100px) scale(0.98);
+    -ms-transform: translateX(-100px) scale(0.98);
+    transform: translateX(-100px) scale(0.98);
+}
+.fade-in {
+    opacity: 0;
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
+}
+.grow-right {
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+}
+.animated {
+    opacity: 1;
+    -webkit-transform: translate(0) scale(1);
+    -ms-transform: translate(0) scale(1);
+    transform: translate(0) scale(1);
+}
+.delay-0 {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.delay-1 {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+.delay-2 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+.delay-3 {
+    -webkit-transition-delay: 0.35s;
+    transition-delay: 0.35s;
+}
+.delay-4 {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}

@@ -497,4 +497,12 @@
     .service-item__list li {
         padding-left: 1.6rem;
     }
+    .delay-0,
+    .delay-1,
+    .delay-2,
+    .delay-3,
+    .delay-4 {
+        -webkit-transition-delay: 0;
+        transition-delay: 0;
+    }
 } /* max-width: 575px */

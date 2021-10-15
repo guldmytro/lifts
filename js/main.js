@@ -180,3 +180,26 @@ $('.header-menu-btn').on('click', function(e) {
     $('.mobile-menu').slideToggle(200);
 
 });
+
+// intersection observer
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2
+  }
+
+let targets = document.querySelectorAll('.animate');
+
+let observer = new IntersectionObserver(intersectionCallback, options);
+targets.forEach(target => {
+    observer.observe(target);
+});
+
+function intersectionCallback(entries, observer) {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+            observer.unobserve(entry.target);
+        }
+    });
+}
