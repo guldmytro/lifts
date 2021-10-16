@@ -203,3 +203,16 @@ function intersectionCallback(entries, observer) {
         }
     });
 }
+
+// popup
+const popup = $('.popup');
+$('.btn_popup').on('click', function(e) {
+    e.preventDefault();
+    popup.addClass('active');
+    document.body.style.overflow = 'hidden';
+});
+$('.popup__close').on('click', function(e) {
+    e.preventDefault();
+    popup.removeClass('active');
+    document.body.style.overflow = '';
+});

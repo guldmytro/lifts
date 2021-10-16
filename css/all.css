@@ -9,7 +9,6 @@
 @import url('header.css');
 @import url('main-home.css');
 @import url('section-catalog.css');
-@import url('section-features.css');
 @import url('section-types.css');
 @import url('section-reasons.css');
 @import url('section-partners.css');
@@ -24,4 +23,5 @@
 @import url('product.css');
 @import url('products.css');
 @import url('footer.css');
+@import url('popup.css');
 @import url('media.css');

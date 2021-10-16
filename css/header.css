@@ -90,6 +90,8 @@
     position: relative;
     padding-right: 4rem;
     padding-left: 4rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 700;

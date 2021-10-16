@@ -125,6 +125,12 @@
     .projects-group {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+    .portfolio {
+        padding-bottom: 10rem;
+    }
+    .main-home .video-bg-wrapper::after {
+        content: none;
+    }
 } /* max-width: 1199px */
 
 @media screen and (max-width: 991px) {
@@ -504,5 +510,15 @@
     .delay-4 {
         -webkit-transition-delay: 0;
         transition-delay: 0;
+    }
+    .portfolio {
+        padding-bottom: 8rem;
+    }
+    .services {
+        background-image: radial-gradient(ellipse 50% 50% at 90% 10%,rgba(193,172,111,.5),transparent);
+    }
+    .popup__form {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 } /* max-width: 575px */

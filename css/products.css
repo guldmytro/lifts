@@ -10,8 +10,11 @@
     height: 5.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: var(--color-text-invert);
+    background: var(--color-text-invert);
+    border-radius: 0;
     border: none;
+    appearance: none;
+    background: var(--color-text-invert) url(../img/arrow-down.png) no-repeat right 1.5rem center / auto 20%;
 }
 
 .products__subtitle {
